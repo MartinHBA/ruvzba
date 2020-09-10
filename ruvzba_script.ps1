@@ -57,7 +57,7 @@
     $tables = $page.ParsedHtml.body.getElementsByTagName('Table')
  
     #Get only the tables that have cells
-    $tableswithcells = $tables | Where { $_.cells }
+    $tableswithcells = $tables | Where-Object { $_.cells }
     $hashPage = @{ }
     $tablecount = 0
  
