@@ -148,9 +148,9 @@ foreach ($item in $myarray) {
 
 # $myObject | Format-Table *
 
-
+$timestamp = get-date -Format "yyyy-MM-dd-HH-mm"
 $outfile = "D:\OneDrive\git\ruvzba\Outfile.csv"
-$outfile2 = "D:\OneDrive\git\ruvzba\everyDay\Outfile$timestamp.csv"
+$outfile2 = "D:\OneDrive\git\ruvzba\everyDay\Outfile_$timestamp.csv"
 ## $csvfile = Import-Csv $outfile
 $myObject | Export-CSV $outfile  -Encoding UTF8 -Append -Force -NoTypeInformation
 $myObject | Export-CSV $outfile2  -Encoding UTF8 -Append -Force -NoTypeInformation
