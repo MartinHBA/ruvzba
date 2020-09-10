@@ -118,13 +118,14 @@
 }
 
 Function Send-ToMyGithub {
+    $timestamp = get-date -Format "yyyy-MM-dd-HH-mm"
     Set-Location -Path D:\OneDrive\git\ruvzba
     git add .
-    git commit -m "updated after day"
+    git commit -m "updated at $timestamp"
     git push
 }
 
-get-date -Format "YYYY-MM-dd-HH-ss"
+
 
 $objPage = Get-HTMLTables -firstRowHeader $true -url 'http://www.ruvzba.sk/pozitiv%20frame.html'
 
