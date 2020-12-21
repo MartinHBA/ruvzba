@@ -1,4 +1,4 @@
-﻿AgPosit,AgTests,Dennych.prirastkov,Dennych.testov,ResidentialDoffsetPredictor,RetailDoffsetPredictor,DatumPredictor
+﻿AgPosOffset,AgTestsOffset,PcrPosOffset,PcrTestsOffset,ResidentialDoffset,RetailDoffset,Datum
 1957,28741,1949,10245,10,-26,2020-12-17 00:00:00
 3008,42606,2564,13277,10,-26,2020-12-18 00:00:00
 2244,33854,3125,15130,4,-24,2020-12-19 00:00:00
